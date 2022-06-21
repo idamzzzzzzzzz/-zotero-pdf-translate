@@ -1,0 +1,37 @@
+{
+  "name": "zotero-pdf-translate",
+  "addonName": "Zotero PDF Translate",
+  "addonID": "zoteropdftranslate@euclpts.com",
+  "addonRef": "zoteropdftranslate",
+  "version": "0.8.14",
+  "description": "PDF translation for Zotero built-in PDF reader.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node start.js",
+    "stop": "node stop.js",
+    "prerestart": "npm run build",
+    "restart": "node restart.js",
+    "release": "release-it",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/windingwind/zotero-pdf-translate.git"
+  },
+  "author": "windingwind",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/windingwind/zotero-pdf-translate/issues"
+  },
+  "homepage": "https://github.com/windingwind/zotero-pdf-translate#readme",
+  "dependencies": {
+    "compressing": "^1.5.1",
+    "crypto-js": "^4.1.1",
+    "esbuild": "^0.14.34",
+    "replace-in-file": "^6.3.2"
+  },
+  "devDependencies": {
+    "release-it": "^14.14.0"
+  }
+}
